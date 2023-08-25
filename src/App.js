@@ -12,14 +12,14 @@ import './App.css'
 const App = () => (
   <div className="app-container">
     <div className="responsive-container">
+      <Header />
       <div className="app-body">
         <Switch>
-          <Header />
-          <Route component={NotFound} />
-          <Route exact path="/" component={Contact} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Home} />
-          <Route path="/blogs/id" component={BlogItemDetails} />
+          <Route exact path="/contact" component={Contact} />
+          <Route path="/blogs/:id" component={BlogItemDetails} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     </div>

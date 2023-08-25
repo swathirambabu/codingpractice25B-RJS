@@ -15,13 +15,17 @@ const Header = () => (
     <ul className="nav-items-list">
       <li className="link-item">
         <Link className="route-link" to="/">
-          Contact
-        </Link>
-        <Link className="route-link" to="/about">
           Home
         </Link>
-        <Link className="route-link" to="/contact">
+      </li>
+      <li className="link-item">
+        <Link className="route-link" to="/about">
           About
+        </Link>
+      </li>
+      <li className="link-item">
+        <Link className="route-link" to="/contact">
+          Contact
         </Link>
       </li>
     </ul>
